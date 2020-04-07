@@ -73,9 +73,29 @@ function footerP(event){
 }
 footerText.addEventListener('click', footerP)
 
+// // loaded 
+// function load(event){
+//     alert('you loaded')
+// }
+// window.addEventListener('load', load)
 
-//Scroll
+
+//Alert on last picture
 function pic(event){
     alert('Do Not Fall In!!!!')
 }
 btmPic.addEventListener('click', pic)
+
+// stop propagation
+homeButton = document.querySelector('a');
+function clickEventHandler(event){
+    event.preventDefault();
+    event.stopPropagation();
+    console.log(event.type = '!!!!!');
+    console.log(event.target);
+    console.log(event.currentTarget);
+};
+
+
+
+
