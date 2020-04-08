@@ -102,6 +102,14 @@ function clickHandler(event) {
   document.addEventListener('click', clickHandler)
   document.body.addEventListener('click', clickHandler)
   window.addEventListener('click', clickHandler)
+ 
+
+
+const links = get('a')
+function linkA(event){
+  event.preventDefault()
+}
+links.addEventListener('click', linkA)
 
 
 
