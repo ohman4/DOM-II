@@ -73,11 +73,11 @@ function footerP(event){
 }
 footerText.addEventListener('click', footerP)
 
-// // loaded 
-// function load(event){
-//     alert('you loaded')
-// }
-// window.addEventListener('load', load)
+// loaded 
+function load(event){
+    alert('you loaded')
+}
+window.addEventListener('load', load)
 
 
 //Alert on last picture
