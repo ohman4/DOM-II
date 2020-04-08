@@ -87,15 +87,21 @@ function pic(event){
 btmPic.addEventListener('click', pic)
 
 // stop propagation
-homeButton = document.querySelector('a');
-function clickEventHandler(event){
-    event.preventDefault();
-    event.stopPropagation();
-    console.log(event.type = '!!!!!');
-    console.log(event.target);
-    console.log(event.currentTarget);
-};
-
+function clickHandler(event) {
+    console.log('just clicking!!!!!!!')
+    console.log('event target:')
+    console.dir(event.target)
+  
+    console.log('current target:')
+    console.dir(event.currentTarget)
+    
+    event.stopPropagation()// stops the bubblings
+    
+    event.preventDefault()// on a link to prevent it from navigation or a form to prevent it from reloading the page
+  }
+  document.addEventListener('click', clickHandler)
+  document.body.addEventListener('click', clickHandler)
+  window.addEventListener('click', clickHandler)
 
 
 
